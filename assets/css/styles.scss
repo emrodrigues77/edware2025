@@ -1,0 +1,102 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
+$header-font: 'Comfortaa', cursive;
+$body-font: 'Roboto Serif', serif;
+
+/* colors */
+$black: #000000;
+$white: #ffffff;
+$blue: #0000ff;
+$orange: #ff8000;
+$primary-color: $blue;
+$secondary-color: $orange;
+
+/* dimensions */
+$default-margin: 1rem;
+$default-padding: 1rem;
+$default-line-height: 1.5rem;
+
+/* floats */
+$default-float: left;
+
+/* borders */
+$default-border: 1px solid lighten($black, 70%);
+$default-border-radius: 5px;
+
+/* alignments */
+$default-text-align: justify;
+
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: $body-font;
+    color: $black;
+    line-height: $default-line-height;
+}
+
+.book-cover-container {
+    float: $default-float;
+    margin: $default-margin;
+    padding: $default-padding;
+    border-right: $default-border;
+    border-radius: $default-border-radius;
+}
+
+.book-cover-container span {
+    font-style: italic;
+    text-align: center;
+    display: block;
+}
+
+.book-cover-container img {
+    display: block;
+    max-width: 210px;
+    height: auto;
+}
+
+.book-title {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.brand {
+    font-family: $header-font;
+    font-size: 3rem;
+}
+
+.content {
+    margin: $default-margin;
+    padding: $default-padding;
+}
+
+.content p {
+    text-align: $default-text-align;
+}
+
+.contentHeader {
+    margin: $default-margin;
+    padding: $default-padding;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $header-font;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+#main {
+    margin: $default-margin;
+    padding: $default-padding;
+}

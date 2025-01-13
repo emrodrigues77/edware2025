@@ -1,0 +1,15 @@
+services:
+  php:
+    container_name: edware2025
+    build: .    
+    ports:
+     - "9000:80"
+    volumes:
+     - .:/var/www/html
+     - ./xdebug:/var/logs/xdebug
+    networks:
+      - web_network  
+  
+networks:
+  web_network:
+    driver: bridge  
