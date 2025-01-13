@@ -14,9 +14,10 @@ $primary-color: $blue;
 $secondary-color: $orange;
 
 /* dimensions */
-$default-margin: 1rem;
-$default-padding: 1rem;
+$default-margin: 0.5rem;
+$default-padding: 0.5rem;
 $default-line-height: 1.5rem;
+$paragraph-width: 80%;
 
 /* floats */
 $default-float: left;
@@ -43,7 +44,7 @@ body {
     float: $default-float;
     margin: $default-margin;
     padding: $default-padding;
-    border-right: $default-border;
+    // border-right: $default-border;
     border-radius: $default-border-radius;
 }
 
@@ -70,17 +71,22 @@ body {
 }
 
 .content {
-    margin: $default-margin;
-    padding: $default-padding;
+    clear: both;
 }
 
 .content p {
     text-align: $default-text-align;
+    width: $paragraph-width;
 }
 
 .contentHeader {
     margin: $default-margin;
     padding: $default-padding;
+    border-bottom: $default-border;
+}
+
+.contentHeader p {
+    font-style: italic;
 }
 
 h1,
@@ -96,7 +102,30 @@ h1 {
     font-size: 2rem;
 }
 
+header {
+    padding: $default-padding;
+    margin: $default-margin;
+}
+
 #main {
     margin: $default-margin;
     padding: $default-padding;
+}
+
+nav {
+    padding: $default-padding;
+    // margin: $default-margin;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: $default-margin;
+    border-left: $default-border;
+    padding-left: $default-padding;
+}
+
+#social {
+    padding: $default-padding;
+    margin: $default-margin;
+    clear: both;
 }
