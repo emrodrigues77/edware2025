@@ -1,15 +1,15 @@
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-$header-font: 'Comfortaa', cursive;
-$body-font: 'Roboto Serif', serif;
+$header-font: 'Bricolage Grotesque', cursive;
+$body-font: 'Noto Sans', serif;
 
 /* colors */
 $black: #000000;
-$white: #ffffff;
-$blue: #0000ff;
-$orange: #ff8000;
+$white: #fbf9ff;
+$blue: #26408B;
+$orange: #EE7500;
 $primary-color: $blue;
 $secondary-color: $orange;
 
@@ -17,7 +17,11 @@ $secondary-color: $orange;
 $default-margin: 0.5rem;
 $default-padding: 0.5rem;
 $default-line-height: 1.5rem;
-$paragraph-width: 80%;
+$container-offset: 5%;
+$paragraph-width: 100%;
+$content-min-height: 600px;
+$icon-size: 36px;
+$default-font-size: 1rem;
 
 /* floats */
 $default-float: left;
@@ -26,29 +30,30 @@ $default-float: left;
 $default-border: 1px solid lighten($black, 70%);
 $default-border-radius: 5px;
 
-/* alignments */
+/* alignment */
 $default-text-align: justify;
-
 
 a {
     text-decoration: none;
+    color: $primary-color;
 }
 
 body {
     font-family: $body-font;
     color: $black;
     line-height: $default-line-height;
+    background-color: $white;
 }
 
 .book-cover-container {
     float: $default-float;
     margin: $default-margin;
     padding: $default-padding;
-    // border-right: $default-border;
     border-radius: $default-border-radius;
 }
 
-.book-cover-container span {
+.book-cover-container span,
+.profile-image-container span {
     font-style: italic;
     text-align: center;
     display: block;
@@ -56,7 +61,7 @@ body {
 
 .book-cover-container img {
     display: block;
-    max-width: 210px;
+    max-width: 300px;
     height: auto;
 }
 
@@ -72,6 +77,10 @@ body {
 
 .content {
     clear: both;
+    margin: ($default-margin * 2.5) $container-offset;
+    background-color: $white;
+    padding: $default-padding $container-offset;
+    min-height: $content-min-height;
 }
 
 .content p {
@@ -82,11 +91,25 @@ body {
 .contentHeader {
     margin: $default-margin;
     padding: $default-padding;
-    border-bottom: $default-border;
 }
 
 .contentHeader p {
     font-style: italic;
+}
+
+#copyright {
+    font-size: $default-font-size * 1.25;
+    font-weight: bolder;
+    display: block;
+}
+
+footer {
+    clear: both;
+    padding: ($default-padding * 4) $default-padding $default-padding $container-offset;
+    background-color: $primary-color;
+    color: $white;
+    min-height: 150px;
+    font-family: $header-font;
 }
 
 h1,
@@ -103,29 +126,73 @@ h1 {
 }
 
 header {
-    padding: $default-padding;
-    margin: $default-margin;
+    padding: $default-padding $default-padding $default-padding $container-offset;
+    background-color: $primary-color;
+    color: $white;
+}
+
+.icon {
+    color: $orange;
+    font-size: $icon-size;
 }
 
 #main {
-    margin: $default-margin;
     padding: $default-padding;
 }
 
+#main-logo {
+    height: $icon-size;
+    width: auto;
+}
+
 nav {
+    padding-left: $container-offset;
+    background-color: $white;
+    border-bottom: $default-border;
+}
+
+nav ul {
+    margin: 0;
     padding: $default-padding;
-    // margin: $default-margin;
 }
 
 nav ul li {
     display: inline-block;
-    margin-right: $default-margin;
-    border-left: $default-border;
     padding-left: $default-padding;
 }
 
-#social {
-    padding: $default-padding;
+nav ul li a {
+    color: $orange;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: $secondary-color;
+    font-weight: bold;
+    font-size: $default-font-size * 1.25;
+    text-transform: uppercase;
+}
+
+.profile-image-container {
+    float: $default-float;
     margin: $default-margin;
+    padding: $default-padding;
+}
+
+.profile-image-container img {
+    display: block;
+    max-width: 450px;
+    height: auto;
+}
+
+#social {
+    padding-right: $container-offset;
     clear: both;
+    text-align: left;
+}
+
+#social img {
+    height: $icon-size;
+    width: $icon-size;
+    display: inline-block;
 }

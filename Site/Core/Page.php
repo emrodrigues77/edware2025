@@ -16,28 +16,27 @@ class Page
     {
         echo $this->openHTML();
 
-        include PAGES_PATH . 'header.php';
         include PAGES_PATH . 'nav.php';
+        // include PAGES_PATH . 'header.php';
 
         echo "<div id='main'>";
         include PAGES_PATH . $this->getContentFile() . '.php';
         echo "</div>";
 
-        include PAGES_PATH . 'social.php';
-        include PAGES_PATH . 'nav.php';
         include PAGES_PATH . 'footer.php';
         echo $this->closeHTML();
     }
 
     private function openHTML(): string
     {
-        return
-        "<html lang='en' >"
+        return "<html lang='en' >"
         . "<head>"
         . "<meta charset='UTF-8'>"
         . "<title>" . PageUtils::getPageTitle($this->content) . "</title>"
             . "<meta name='viewport' content='width=device-width, initial-scale=1.0'>"
             . "<link rel='stylesheet' href='" . CSS_PATH . "normalize.css' />"
+            . "<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css' "
+            . "integrity='sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH' crossorigin='anonymous' />"
             . "<link rel='stylesheet' href='" . CSS_PATH . "styles.min.css' />"
             . "</head>"
             . "<body>";
@@ -45,8 +44,9 @@ class Page
 
     private function closeHTML(): string
     {
-        return
-            "</body>"
+        return "<script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js' "
+            . "integrity='sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz' crossorigin='anonymous'></script>"
+            . "</body>"
             . "</html>";
     }
 
