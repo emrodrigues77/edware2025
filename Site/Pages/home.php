@@ -1,3 +1,6 @@
+<?php
+    use Site\Utils\ImageUtils;
+?>
 <div class="content">
     <div class="contentHeader">
         <h1>Bem Vindo!</h1>
@@ -5,9 +8,15 @@
             Quem sou eu?
         </p>
     </div>
+    <?php
+        echo ImageUtils::renderImageContainer(
+            'profile-image-container',
+            PROFILE_PATH . 'profile.jpg',
+            'Eduardo M. Rodrigues'
+    ); ?>
     <p>
-        Meu nome é Eduardo M. Rodrigues, um leitor ávido desde meus primeiros dias na escola. Frequentador assíduo de
-        bibliotecas, procurava sempre estar lendo algum livro. No Ensino Fundamental I, como era de se esperar, lia
+        Eu me chamo Eduardo Magela Rodrigues, um leitor ávido desde meus primeiros dias na escola. Frequentador assíduo
+        de bibliotecas, procurava sempre estar lendo algum livro. No Ensino Fundamental I, como era de se esperar, lia
         obras mais simples e de entendimento mais fácil, o que talvez tenha sido importante para alimentar meu gosto
         pela leitura. Alie-se a isto que meu pai, percebendo esta minha inclinação, vivia comprando coleções de livros e
         enciclopédias. Eu lia de tudo: desde livros de histórias infantis a atlas geográficos e revistas de variedades.
@@ -39,14 +48,15 @@
     </p>
     <p>
         Posso afirmar com segurança que a leitura exerce papel fundamental na minha vida, em vários aspectos. Ela
-        possibilitou meu crescimento pessoal e intelectual, tornando-me uma pessoa mais racional e educada. E assim — do
-        mesmo modo que um fã de música acaba por aprender a tocar um instrumento e fazer sua própria música — acabei por
-        começar a escrever meus próprios textos.
+        possibilitou meu crescimento pessoal e intelectual, tornando-me uma pessoa mais racional e ponderada. E assim —
+        do mesmo modo que um fã de música acaba por aprender a tocar um instrumento e fazer sua própria música — acabei
+        por começar a escrever meus próprios textos.
     </p>
     <p>
-        Meu primeiro livro publicado foi a novela policial intitulada <span class='book-title'>“A Flor Negra”</span>, em
-        2017. Seguiu-se a coletânea de contos <span class='book-title'>“O Presidente e Outras Histórias”</span> (2020),
-        e a novela de ficção científica <span class='book-title'>“A Estação Éden”</span>, publicada em 2022.
+        Meu primeiro livro publicado foi a novela policial intitulada <span class='book-title'><a href="/flor">“A Flor
+                Negra”</a></span>, em 2017. Seguiu-se a coletânea de contos <span class='book-title'><a
+                href="/presidente">“O Presidente e Outras Histórias”</a></span> (2020), e a novela de ficção científica
+        <span class='book-title'><a href="/eden">“Estação Éden”</a></span>, publicada em 2022.
     </p>
     <p>
         Meu grande sonho é poder viver unicamente da Literatura, mas enquanto isso não acontece, sigo publicando meus

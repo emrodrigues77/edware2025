@@ -1,5 +1,5 @@
 <?php
-use Site\Utils\ImageUtils;
+    use Site\Utils\ImageUtils;
 ?>
 <div class="content">
     <div class="contentHeader">
@@ -9,12 +9,11 @@ use Site\Utils\ImageUtils;
         </p>
     </div>
     <?php
-echo ImageUtils::renderImageContainer(
-    'book-cover-container',
-    COVERS_PATH . 'a-flor-negra.jpg',
-    'A Flor Negra',
-    'A Flor Negra'
-); ?>
+        echo ImageUtils::renderImageContainer(
+            'book-cover-container',
+            COVERS_PATH . 'a-flor-negra.jpg',
+            'A Flor Negra'
+    ); ?>
     <p>
         Sem qualquer motivo específico, eu não era muito interessado em romances policiais. Confesso que nunca li
         qualquer obra de mestres deste gênero como Agatha Christie ou Conan Doyle, por exemplo. Honestamente falando,
@@ -35,6 +34,6 @@ echo ImageUtils::renderImageContainer(
     </p>
     <p>
         Para ler um excerto de <span class='book-title'>"A Flor Negra"</span>, clique
-        <a href="http://www.eduardo.rodrigues.nom.br/docs/a_flor_negra_excerto.pdf">aqui</a>.
+        <a target="_blank" href="<?php echo DOCS_PATH . "a-flor-negra-excerto.pdf" ?>">aqui</a>.
     </p>
 </div>
