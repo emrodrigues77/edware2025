@@ -1,9 +1,9 @@
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-$header-font: 'Bricolage Grotesque', cursive;
-$body-font: 'Noto Sans', serif;
+$header-font: 'Ubuntu Condensed', sans-serif;
+$body-font: 'Noto Sans', sans-serif;
 
 /* colors */
 $black: #000000;
@@ -27,11 +27,14 @@ $default-font-size: 1rem;
 $default-float: left;
 
 /* borders */
-$default-border: 1px solid lighten($black, 70%);
+$default-border: 2px solid lighten($primary-color, 55%);
 $default-border-radius: 5px;
 
 /* alignment */
 $default-text-align: justify;
+
+/* effects */
+$default-box-shadow: 3px 3px 5px 0px lighten($black, 50%);
 
 a {
     text-decoration: none;
@@ -47,7 +50,7 @@ body {
 
 .book-cover-container {
     float: $default-float;
-    margin: $default-margin;
+    margin: $default-margin * 3;
     padding: $default-padding;
     border-radius: $default-border-radius;
 }
@@ -63,6 +66,7 @@ body {
     display: block;
     max-width: 300px;
     height: auto;
+    box-shadow: $default-box-shadow;
 }
 
 .book-title {
@@ -88,11 +92,6 @@ body {
     width: $paragraph-width;
 }
 
-.contentHeader {
-    margin: $default-margin;
-    padding: $default-padding;
-}
-
 .contentHeader p {
     font-style: italic;
 }
@@ -109,7 +108,7 @@ footer {
     background-color: $primary-color;
     color: $white;
     min-height: 150px;
-    font-family: $header-font;
+    font-family: $body-font;
 }
 
 h1,
@@ -171,11 +170,12 @@ nav ul li a {
     font-weight: bold;
     font-size: $default-font-size * 1.25;
     text-transform: uppercase;
+    font-family: $header-font;
 }
 
 .profile-image-container {
     float: $default-float;
-    margin: $default-margin;
+    margin: $default-margin * 3;
     padding: $default-padding;
 }
 
@@ -183,6 +183,7 @@ nav ul li a {
     display: block;
     max-width: 450px;
     height: auto;
+    box-shadow: $default-box-shadow;
 }
 
 #social {
