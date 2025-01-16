@@ -24,3 +24,10 @@ define('PAGES_TITLES',
         ["file" => "v4t3r", "title" => "V4T3R"],
         ["file" => "contato", "title" => "Contato"],
     ]);
+define('SOCIAL_LINKS',
+    [
+        ["title" => "Instagram", "url" => "https://www.instagram.com/durodrigues77/", "icon" => "instagram"],
+        ["title" => "Linkedin", "url" => "https://www.linkedin.com/in/durodrigues77/", "icon" => "linkedin"],
+        ["title" => "Twitter", "url" => "https://twitter.com/durodrigues77", "icon" => "twitter"],
+    ]
+);
