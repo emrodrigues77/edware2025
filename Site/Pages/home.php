@@ -55,8 +55,11 @@
     <p>
         Meu primeiro livro publicado foi a novela policial intitulada <span class='book-title'><a href="/flor">“A Flor
                 Negra”</a></span>, em 2017. Seguiu-se a coletânea de contos <span class='book-title'><a
-                href="/presidente">“O Presidente e Outras Histórias”</a></span> (2020), e a novela de ficção científica
-        <span class='book-title'><a href="/eden">“Estação Éden”</a></span>, publicada em 2022.
+                href="/presidente">“O Presidente e Outras Histórias”</a></span> (2020); a novela de ficção científica
+        <span class='book-title'><a href="/eden">“Estação Éden”</a></span>, publicada em 2022; e meu mais novo
+        lançamento:
+        <span class='book-title'><a href="/v4t3r">“V4T3R - Parte I: O Basilar e o Padre”</a></span>, a primeira parte de
+        trilogia de ficção científica, publicada em 2025.
     </p>
     <p>
         Meu grande sonho é poder viver unicamente da Literatura, mas enquanto isso não acontece, sigo publicando meus

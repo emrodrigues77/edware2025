@@ -12,11 +12,12 @@ class ImageUtils
         string $imageAlt,
         string $imageCaption = ''
     ): string {
-        return
-            "<div class='" . $containerClass . "'>"
+        return "<div class='" . $containerClass . "'>"
+            . "<a href='" . $imageSrc . "' target='_blank'>"
             . "<img src='" . $imageSrc . "' "
             . "alt='" . $imageAlt . "' "
             . "title='" . $imageAlt . "' />"
+            . "</a>"
             . "<span>" . $imageCaption . "</span>"
             . "</div>";
     }

@@ -36,4 +36,7 @@
         Para ler um excerto de <span class='book-title'>"A Flor Negra"</span>, clique
         <a target="_blank" href="<?php echo DOCS_PATH . "a-flor-negra-excerto.pdf" ?>">aqui</a>.
     </p>
+    <p>
+        Para adquirir um exemplar, clique <a href="mailto:eduardo@eduardo.rodrigues.nom.br">aqui</a>.
+    </p>
 </div>

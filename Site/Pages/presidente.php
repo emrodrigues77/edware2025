@@ -61,4 +61,7 @@
         Para ler um excerto de <span class='book-title'>"O Presidente e Outras Histórias"</span>, clique
         <a target="_blank" href="<?php echo DOCS_PATH . "o-presidente-excerto.pdf" ?>">aqui</a>.
     </p>
+    <p>
+        Para adquirir um exemplar, clique <a href="mailto:eduardo@eduardo.rodrigues.nom.br">aqui</a>.
+    </p>
 </div>

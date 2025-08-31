@@ -26,8 +26,35 @@ define('PAGES_TITLES',
     ]);
 define('SOCIAL_LINKS',
     [
-        ["title" => "Instagram", "url" => "https://www.instagram.com/durodrigues77/", "icon" => "instagram"],
-        ["title" => "Linkedin", "url" => "https://www.linkedin.com/in/durodrigues77/", "icon" => "linkedin"],
-        ["title" => "Twitter", "url" => "https://twitter.com/durodrigues77", "icon" => "twitter"],
+        [
+            "title" => "Instagram",
+            "url"   => "https://www.instagram.com/durodrigues77/",
+            "icon"  => "instagram",
+            "type"  => "url",
+        ],
+        [
+            "title" => "Linkedin",
+            "url"   => "https://www.linkedin.com/in/durodrigues77/",
+            "icon"  => "linkedin",
+            "type"  => "url",
+        ],
+        [
+            "title" => "Twitter",
+            "url"   => "https://twitter.com/durodrigues77",
+            "icon"  => "twitter",
+            "type"  => "url",
+        ],
+        [
+            "title" => "E-mail",
+            "url"   => "eduardo@eduardo.rodrigues.nom.br",
+            "icon"  => "email",
+            "type"  => "email",
+        ],
+        [
+            "title" => "WhatsApp",
+            "url"   => "https://wa.me/5537999934969",
+            "icon"  => "whatsapp",
+            "type"  => "url",
+        ],
     ]
 );

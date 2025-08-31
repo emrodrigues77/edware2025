@@ -40,8 +40,13 @@
         Júpiter, para onde ela decidiu ir após uma desilusão amorosa. Com o decorrer da história, ele se deparará com os
         questionamentos que a roboticista levanta sobre relacionamentos amorosos, tecnologia e o papel da memória para
         os humanos.
+    </p>
     <p>
         Para ler um excerto de <span class='book-title'>"Estação Éden"</span>, clique
         <a target="_blank" href="<?php echo DOCS_PATH . "estacao-eden-excerto.pdf" ?>">aqui</a>.
+    </p>
+    <p>
+        Para adquirir um exemplar, clique <a target="_blank"
+            href="https://www.autografia.com.br/produto/estacao-eden-uma-novela-de-ficcao-cientifica/">aqui</a>.
     </p>
 </div>

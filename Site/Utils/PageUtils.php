@@ -22,9 +22,10 @@ class PageUtils
         $links = '';
 
         foreach (SOCIAL_LINKS as $link) {
+            $url = $link['type'] === 'email' ? 'mailto:' . $link['url'] : $link['url'];
             $links .= "<p>"
                 . "<strong>" . $link['title'] . ": </strong>"
-                . "<a target='_blank' href='" . $link['url'] . "'>"
+                . "<a target='_blank' href='" . $url . "'>"
                 . $link['url']
                 . "</a>"
                 . "</p>";
@@ -38,7 +39,8 @@ class PageUtils
         $links = '<p>';
 
         foreach (SOCIAL_LINKS as $link) {
-            $links .= "<a href='" . $link['url'] . "'>"
+            $url = $link['type'] === 'email' ? 'mailto:' . $link['url'] : $link['url'];
+            $links .= "<a href='" . $url . "'>"
                 . "<img src='" . ICONS_PATH . $link['icon'] . ".png' alt='" . $link['title'] . "' "
                 . "title='" . $link['title'] . "'/></a>&nbsp;";
         }

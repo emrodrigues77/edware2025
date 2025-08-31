@@ -21,9 +21,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="./eden">Estação Éden</a>
                 </li>
-                <!--<li class="nav-item">
+                <li class="nav-item">
                     <a class="nav-link" href="./v4t3r">V4T3R</a>
-                </li>-->
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./contato">Contato</a>
                 </li>
