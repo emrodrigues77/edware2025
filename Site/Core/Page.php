@@ -37,6 +37,8 @@ class Page
             . "<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css' "
             . "integrity='sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH' crossorigin='anonymous' />"
             . "<link rel='stylesheet' href='" . CSS_PATH . "styles.min.css' />"
+            . "<meta name='description' content='Página do autor Eduardo Magela Rodrigues, escritor de ficção científica.'>"
+            . "<meta name='keywords' content='Eduardo Magela Rodrigues, escritor, ficção científica, livros, A Flor Negra, O Presidente e Outras Histórias, Estação Éden, V4T3R, literatura, contos, romances, autor brasileiro'>"
             . "</head>"
             . "<body>";
     }
