@@ -24,7 +24,7 @@ $icon-size: 36px;
 $default-font-size: 1rem;
 
 /* floats */
-$default-float: left;
+$default-float: right;
 
 /* borders */
 $default-border: 2px solid lighten($primary-color, 55%);
@@ -51,7 +51,7 @@ body {
 .book-cover-container {
     float: $default-float;
     margin: $default-margin * 3;
-    padding: $default-padding;
+    padding: $default-padding * 2;
     border-radius: $default-border-radius;
 }
 
@@ -122,6 +122,11 @@ h6 {
 
 h1 {
     font-size: 2rem;
+}
+
+h2 {
+    margin-top: $default-margin * 4;
+    font-size: 1.5rem;
 }
 
 header {

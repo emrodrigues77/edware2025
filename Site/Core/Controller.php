@@ -11,7 +11,7 @@ class Controller
         if (\file_exists(PAGES_PATH . $request . '.php')) {
             $page = new Page($request);
         } else {
-            $page = new Page('home');
+            $page = new Page('v4t3r');
         }
 
         $page->render();

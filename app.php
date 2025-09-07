@@ -23,6 +23,7 @@ define('PAGES_TITLES',
         ["file" => "eden", "title" => "Estação Éden"],
         ["file" => "v4t3r", "title" => "V4T3R"],
         ["file" => "contato", "title" => "Contato"],
+        ["file" => "eu", "title" => "Eu"],
     ]);
 define('SOCIAL_LINKS',
     [

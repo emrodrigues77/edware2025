@@ -17,7 +17,6 @@ class Page
         echo $this->openHTML();
 
         include PAGES_PATH . 'nav.php';
-        // include PAGES_PATH . 'header.php';
 
         echo "<div id='main'>";
         include PAGES_PATH . $this->getContentFile() . '.php';

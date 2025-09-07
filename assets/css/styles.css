@@ -20,9 +20,9 @@ body {
 }
 
 .book-cover-container {
-  float: left;
+  float: right;
   margin: 1.5rem;
-  padding: 0.5rem;
+  padding: 1rem;
   border-radius: 5px;
 }
 
@@ -95,6 +95,11 @@ h1 {
   font-size: 2rem;
 }
 
+h2 {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+
 header {
   padding: 0.5rem 0.5rem 0.5rem 5%;
   background-color: #26408B;
@@ -145,7 +150,7 @@ nav ul li a {
 }
 
 .profile-image-container {
-  float: left;
+  float: right;
   margin: 1.5rem;
   padding: 0.5rem;
 }
